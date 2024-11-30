@@ -3,6 +3,10 @@
 ## Descripción del Proyecto
 Este proyecto es una aplicación CRUD (Create, Read, Update, Delete) para gestionar una lista de Pokémon.Se ha desarrollado utilizando **Laravel** y está configurado para funcionar de forma local en un servidor **XAMPP**.
 
+![imagen1](images/1.png)
+![imagen2](images/3.png)
+![imagen3](images/4.png)
+
 ---
 
 ## Requisitos Previos
@@ -64,6 +68,7 @@ public function up(): void
     });
 }
 ```
+![imagen9](images/3.png)
 
 ---
 Los archivos que hemos utilizado en este proyecto son los siguientes:
@@ -114,8 +119,7 @@ Este método crea automáticamente todas las rutas CRUD necesarias (index, creat
 
 ## Mensajes de Éxito
 En el controlador `PokemonController` se manejan mensajes de éxito al realizar acciones:
-![imagen7](images/7.png)
-![imagen8](images/8.png)
+
 ### Eliminar un Pokémon
 ```php
 public function destroy(Pokemon $pokemon)
@@ -124,8 +128,9 @@ public function destroy(Pokemon $pokemon)
     return redirect()->route('pokemons.index')->with('success', 'Pokémon removed.');
 }
 ```
-![imagen6](images/6.png)
-![imagen5](images/5.png)
+![imagen7](images/7.png)
+![imagen8](images/8.png)
+
 ### Actualizar un Pokémon
 ```php
 public function update(Request $request, Pokemon $pokemon)
@@ -134,6 +139,9 @@ public function update(Request $request, Pokemon $pokemon)
     return redirect()->route('pokemons.index')->with('success', 'Pokémon has been updated!');
 }
 ```
+
+![imagen6](images/6.png)
+![imagen5](images/5.png)
 
 ---
 
