@@ -138,7 +138,8 @@ public function update(Request $request, Pokemon $pokemon)
 ## Ventanas Emergentes
 Se utiliza JavaScript para confirmar la eliminación de un Pokémon:
 ```html
-<form action="{{ route('pokemons.destroy', $pokemon) }}" method="POST" style="display:inline;" onsubmit="return confirm('Are you sure?')">
+<form action="{{ route('pokemons.destroy', $pokemon) }}" method="POST"
+    style="display:inline;" onsubmit="return confirm('Are you sure?')">
     @csrf
     @method('DELETE')
     <button type="submit">Delete</button>
