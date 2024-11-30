@@ -15,7 +15,7 @@ Este proyecto es una aplicación CRUD (Create, Read, Update, Delete) para gestio
 
 ### 1. Instalar XAMPP
 ### 2. Extensiones PHP requeridas para Laravel
-He tenido que asegurarme que las siguientes extensiones están habilitadas en el archivo php.ini
+He tenido que asegurarme que las siguientes extensiones estén habilitadas en el archivo php.ini
 
 - `pdo`
 - `pdo_mysql`
