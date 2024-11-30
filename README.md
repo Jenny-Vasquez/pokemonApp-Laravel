@@ -22,9 +22,9 @@ He tenido que asegurarme que las siguientes extensiones están habilitadas en el
 - `bcmath`
 
 #### Habilitar las extensiones para ello:
-1. Abre el archivo `php.ini` ubicado en `C:/xampp/php/php.ini`.
-2. Busca estas extensiones y elimina el `;` al inicio si están comentadas.
-3. Reinicia XAMPP para aplicar los cambios.
+1. Buscamos el archivo `php.ini` ubicado en `C:/xampp/php/php.ini`.
+2. Buscamos las extensiones y eliminamos el `;` al inicio si están comentadas.
+3. Reiniciamos XAMPP para aplicar los cambios.
 
 ### 3. Instalar Composer
 Descarga e instala [Composer](https://getcomposer.org).
@@ -114,7 +114,8 @@ Este método crea automáticamente todas las rutas CRUD necesarias (index, creat
 
 ## Mensajes de Éxito
 En el controlador `PokemonController` se manejan mensajes de éxito al realizar acciones:
-
+![imagen7](images/7.png)
+![imagen8](images/8.png)
 ### Eliminar un Pokémon
 ```php
 public function destroy(Pokemon $pokemon)
@@ -123,7 +124,8 @@ public function destroy(Pokemon $pokemon)
     return redirect()->route('pokemons.index')->with('success', 'Pokémon removed.');
 }
 ```
-
+![imagen6](images/6.png)
+![imagen5](images/5.png)
 ### Actualizar un Pokémon
 ```php
 public function update(Request $request, Pokemon $pokemon)
@@ -136,6 +138,7 @@ public function update(Request $request, Pokemon $pokemon)
 ---
 
 ## Ventanas Emergentes
+![imagen7](images/7.png)
 Se utiliza JavaScript para confirmar la eliminación de un Pokémon:
 ```html
 <form action="{{ route('pokemons.destroy', $pokemon) }}" method="POST"
